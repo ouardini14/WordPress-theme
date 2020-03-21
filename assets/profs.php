@@ -8,7 +8,7 @@ get_header();?>
     <meta name="description" content="" />
     <meta name="author" content="" />
     
-    <title>EST'SB</title>
+    
     <title>EST'SB</title>
 <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
      <!-- FLEXSLIDER CSS -->
