@@ -13,19 +13,13 @@ get_header();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/logo180-50.png" alt=""  /></a>
-=======
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/ee.jpg" alt=""  /></a>
->>>>>>> updating
-=======
 
+              
             
 
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/ee.jpg" alt=""  /></a>
+              <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/ee.jpg" alt=""  /></a>
 
->>>>>>> advenced update
+
             </div>
             <div class="navbar-collapse collapse move-me">
             	      <?php 
@@ -122,111 +116,49 @@ get_header();
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                      <div class="about-div">
                      <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                   <h3 >Quality Education</h3>
-=======
-                   <h3 >qualité de l'éducation</h3>
->>>>>>> updating
-=======
-
 
                    <h3 >qualité de l'éducation</h3>
-
->>>>>>> advenced update
-                 <hr />
                        <hr />
                    <p >
                        <?php the_field('first_champs');?>
                        
                    </p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-               <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-=======
-               
->>>>>>> updating
-=======
 
              
 
->>>>>>> advenced update
                 </div>
                    </div>
                    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                      <div class="about-div">
                      <i class="fa fa-bolt fa-4x icon-round-border" ></i>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                   <h3 >SYSTEMATIC APPROACH</h3>
-=======
+
                    <h3 >le systéme de l'école</h3>
->>>>>>> updating
-=======
 
-             <h3 >le systéme de l'école</h3>
-
->>>>>>> advenced update
-                 <hr />
                        <hr />
                    <p >
                        <?php the_field('secend_champs');?>
                        
                    </p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-               <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-=======
-               
->>>>>>> updating
-=======
 
-               
-
->>>>>>> advenced update
                 </div>
                    </div>
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
                      <div class="about-div">
                      <i class="fa fa-magic fa-4x icon-round-border" ></i>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                   <h3 >ONE TO ONE STUDY</h3>
-=======
                    <h3 >La formation appliquée</h3>
->>>>>>> updating
-=======
-
-               
-
-                   <h3 >La formation appliquée</h3>
-
->>>>>>> advenced update
-                 <hr />
+                
                        <hr />
                    <p >
                        <?php the_field('tred_champs');?>
                    </p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-               <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-=======
-               
->>>>>>> updating
-=======
 
-               
-
-               
-
->>>>>>> advenced update
                 </div>
                    </div>
                  
                  
                </div>
              </div>
-<<<<<<< HEAD
+
    <!-- FEATURES SECTION END-->
    
     <!-- FACULTY SECTION END-->
@@ -236,27 +168,19 @@ get_header();
 
        
       <!-- COURSES SECTION END-->
-=======
 
->>>>>>> advenced update
     <div id="contact-sec"  style="background: no-repeat center center url('<?php echo the_field('background2');?>'); ">
            <div class="overlay">
  <div class="container set-pad">
       <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
-=======
+
+
                      <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >contactez nous </h1>
->>>>>>> updating
-=======
 
                      
 
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >contactez nous </h1>
-
->>>>>>> advenced update
+            
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
                        <?php the_field('contact');?>
                          </p>
@@ -270,44 +194,21 @@ get_header();
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <form>
                         <div class="form-group">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <input type="text" class="form-control "  required="required" placeholder="Your Name" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control " required="required"  placeholder="Your Email" />
-=======
-=======
+
+                          
 
 
->>>>>>> advenced update
                             <input type="text" class="form-control "  required="required" placeholder="votre nom" />
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control " required="required"  placeholder="voter email" />
-<<<<<<< HEAD
->>>>>>> updating
-=======
 
->>>>>>> advenced update
                         </div>
                         <div class="form-group">
                             <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <button type="submit" class="btn btn-info btn-block btn-lg">SUBMIT REQUEST</button>
-=======
                             <button type="submit" class="btn btn-info btn-block btn-lg">envoyer</button>
->>>>>>> updating
-=======
-
-                            
-
-                            <button type="submit" class="btn btn-info btn-block btn-lg">envoyer</button>
-
->>>>>>> advenced update
                         </div>
 
                     </form>
@@ -326,28 +227,20 @@ get_header();
              <div class="row set-row-pad"  >
     <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <h2 ><strong>Our Location </strong></h2>
-=======
+
                     <h2 ><strong>Notre emplacement </strong></h2>
->>>>>>> updating
-=======
+
 
                 
-
-                    <h2 ><strong>Notre emplacement </strong></h2>
-
->>>>>>> advenced update
         <hr />
                     <div ">
                         <h4><?php the_field('adresse');?></h4>
                         
-<<<<<<< HEAD
-                        <h4><strong>Call:</strong> <?php the_field('tele');?></h4>
-=======
+
+                        
+ 
                         <h4><strong>Appel:</strong> <?php the_field('tele');?></h4>
->>>>>>> advenced update
+
                         <h4><strong>Email: </strong><?php the_field('email');?></h4>
                     </div>
 
@@ -355,19 +248,13 @@ get_header();
                 </div>
                  <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <h2 ><strong>Social Conectivity </strong></h2>
-=======
+
                     <h2 ><strong>Connectivité sociale </strong></h2>
->>>>>>> updating
-=======
+
 
                     
 
-                    <h2 ><strong>Connectivité sociale </strong></h2>
-
->>>>>>> advenced update
+    
         <hr />
                     <div id="Social">
                       <?php
