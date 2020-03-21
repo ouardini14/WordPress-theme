@@ -6,10 +6,17 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>Free Education Template</title>
 =======
     <title>EST'SB</title>
 >>>>>>> updating
+=======
+
+
+    <title>EST'SB</title>
+
+>>>>>>> advenced update
 <link href="<?php bloginfo('template_url');?>/assets/css/font-awesome.min.css" rel="stylesheet" />
      <!-- FLEXSLIDER CSS -->
 <link href="<?php bloginfo('template_url');?>/ flexslider.css" rel="stylesheet" />
@@ -19,10 +26,18 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/assets/css/bootstrap.css">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <?php wp_head();?>
 =======
   
 >>>>>>> updating
+=======
+
+  
+
+  
+
+>>>>>>> advenced update
 </head>
 <body >
   

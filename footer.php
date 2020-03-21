@@ -16,9 +16,16 @@
     <!--  Custom Scripts --> 
          <script src="<?php bloginfo('template_url')?>/assets/js/custom.js"></script>
 <<<<<<< HEAD
+<<<<<<< HEAD
          <?php wp_footer();?>
 =======
          
 >>>>>>> updating
+=======
+
+
+         
+
+>>>>>>> advenced update
 </body>
 </html>
