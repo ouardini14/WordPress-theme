@@ -1,7 +1,7 @@
 ﻿<?php 
 /*echo'<pre>';
 print_r(get_field('background'));
-echo'</pre>';
+echo'</pre> ';
 die();*/  
 get_header();
 ?> 

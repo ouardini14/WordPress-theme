@@ -15,17 +15,6 @@
     <script src="<?php bloginfo('template_url')?>/assets/js/jquery.easing.min.js"></script>
     <!--  Custom Scripts --> 
          <script src="<?php bloginfo('template_url')?>/assets/js/custom.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-         <?php wp_footer();?>
-=======
-         
->>>>>>> updating
-=======
 
-
-         
-
->>>>>>> advenced update
 </body>
 </html>
