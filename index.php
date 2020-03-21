@@ -237,7 +237,7 @@ get_header();
                         <h4><?php the_field('adresse');?></h4>
                         
 
-                        
+                        <h4><strong>Appel:</strong> <?php the_field('tele');?></h4>
  
                         <h4><strong>Appel:</strong> <?php the_field('tele');?></h4>
 
