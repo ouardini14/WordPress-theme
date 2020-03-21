@@ -7,6 +7,8 @@ get_header();?>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    
+    <title>EST'SB</title>
     <title>EST'SB</title>
 <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
      <!-- FLEXSLIDER CSS -->
