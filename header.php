@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+<<<<<<< HEAD
     <title>Free Education Template</title>
+=======
+    <title>EST'SB</title>
+>>>>>>> updating
 <link href="<?php bloginfo('template_url');?>/assets/css/font-awesome.min.css" rel="stylesheet" />
      <!-- FLEXSLIDER CSS -->
 <link href="<?php bloginfo('template_url');?>/ flexslider.css" rel="stylesheet" />
@@ -14,7 +18,11 @@
   <!-- Google	Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/assets/css/bootstrap.css">
+<<<<<<< HEAD
   <?php wp_head();?>
+=======
+  
+>>>>>>> updating
 </head>
 <body >
   

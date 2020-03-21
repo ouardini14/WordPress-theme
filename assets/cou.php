@@ -62,6 +62,7 @@
 
            <div class="row set-row-pad" >
            <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" >
+<<<<<<< HEAD
                 <?php if( get_field('image') ): ?>
     <img src="<?php the_field('image'); ?>" />
 <?php endif; ?>
@@ -95,18 +96,7 @@
 
 
 
-                           <!-- <div class="panel-heading" >
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
-                                  <strong>   350+</strong><?php echo $desc;?> 
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
-                                <div class="panel-body">
-                                    <a href="<?php echo $lien['url'];?>" target="_blank"><?php echo $desc;?></a>
-                                </div>
-                            </div>-->
+                           
 
     <?php endwhile; ?>
                         </div>
@@ -117,6 +107,62 @@
 
 
 
+
+
+=======
+                 <?php if( get_field('image') ): ?>
+                 <img src="<?php the_field('image'); ?>" class="img-thumbnail" />
+                 <?php endif; ?>
+           </div>
+               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                   <div class="panel-group" id="accordion">
+                        
+
+                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.7s">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                      <strong>   250+</strong> <?php get_sub_field('decription');?> 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.7s">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                      <strong>   250+</strong> <?php get_sub_field('decription');?> 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+
+                               
+                    </div>
+                  
+           </div>
+             
+                 
+                 
+               </div>
+             </div>
 
 
 
@@ -140,6 +186,9 @@
                  
                </div>
              </div>
+=======
+                  
+
 
       <!-- COURSES SECTION END-->
 

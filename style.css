@@ -210,7 +210,11 @@ h1::after {
     font-weight:700;
 }
 .faculty-div {
+<<<<<<< HEAD
     padding: 30px;
+=======
+    padding: 3px;
+>>>>>>> updating
 }
 
     .faculty-div hr {

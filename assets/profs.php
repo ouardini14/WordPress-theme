@@ -45,6 +45,7 @@ get_header();?>
            
         </div>
     </div>
+<<<<<<< HEAD
 <div id="faculty-sec" >
     <div class="container set-pad">
              <div class="row text-center">
@@ -55,12 +56,22 @@ get_header();?>
                         Aenean commodo.
                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo.
+=======
+  <div id="faculty-sec" >
+    <div class="container set-pad">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"><?php the_field('titre');?> </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                      <?php the_field('letexte');?>
+>>>>>>> updating
                          </p>
                  </div>
 
              </div>
              <!--/.HEADER LINE END-->
 
+<<<<<<< HEAD
            <div class="row" >
            
                
@@ -106,5 +117,33 @@ get_header();?>
                  
                </div>
              </div>
+=======
+           <?php
+           if(have_rows('photo')) :?>
+           <div class="d-flex" >
+           
+
+            <?php while (have_rows('photo')) :the_row(); ?>
+               
+                    <div class="col-lg-3  col-md-3 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                     <div class="faculty-div">
+                     <img src="<?php echo get_sub_field('sub_photo');?>"  class="img-rounded" />
+                     <h3 ><?php the_sub_field('sub_texte');?></h3>
+                     <hr />
+                         <h4>département <br /> <?php the_sub_field('departement');?> </h4>
+                      <p >
+                       <?php the_sub_field('title'); ?>
+                       
+                   </p>
+                </div>
+                
+                 
+                   </div>
+            <?php endwhile; ?>
+             </div>
+            <?php endif;?> 
+
+               
+>>>>>>> updating
         </div>
         <?php get_footer();?>

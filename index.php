@@ -13,7 +13,11 @@ get_header();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
                 <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/logo180-50.png" alt=""  /></a>
+=======
+                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/ee.jpg" alt=""  /></a>
+>>>>>>> updating
             </div>
             <div class="navbar-collapse collapse move-me">
             	      <?php 
@@ -110,39 +114,63 @@ get_header();
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                      <div class="about-div">
                      <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
+<<<<<<< HEAD
                    <h3 >Quality Education</h3>
+=======
+                   <h3 >qualité de l'éducation</h3>
+>>>>>>> updating
                  <hr />
                        <hr />
                    <p >
                        <?php the_field('first_champs');?>
                        
                    </p>
+<<<<<<< HEAD
                <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
+=======
+               
+>>>>>>> updating
                 </div>
                    </div>
                    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                      <div class="about-div">
                      <i class="fa fa-bolt fa-4x icon-round-border" ></i>
+<<<<<<< HEAD
                    <h3 >SYSTEMATIC APPROACH</h3>
+=======
+                   <h3 >le systéme de l'école</h3>
+>>>>>>> updating
                  <hr />
                        <hr />
                    <p >
                        <?php the_field('secend_champs');?>
                        
                    </p>
+<<<<<<< HEAD
                <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
+=======
+               
+>>>>>>> updating
                 </div>
                    </div>
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
                      <div class="about-div">
                      <i class="fa fa-magic fa-4x icon-round-border" ></i>
+<<<<<<< HEAD
                    <h3 >ONE TO ONE STUDY</h3>
+=======
+                   <h3 >La formation appliquée</h3>
+>>>>>>> updating
                  <hr />
                        <hr />
                    <p >
                        <?php the_field('tred_champs');?>
                    </p>
+<<<<<<< HEAD
                <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
+=======
+               
+>>>>>>> updating
                 </div>
                    </div>
                  
@@ -163,7 +191,11 @@ get_header();
  <div class="container set-pad">
       <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+<<<<<<< HEAD
                      <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
+=======
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >contactez nous </h1>
+>>>>>>> updating
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
                        <?php the_field('contact');?>
                          </p>
@@ -177,16 +209,27 @@ get_header();
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <form>
                         <div class="form-group">
+<<<<<<< HEAD
                             <input type="text" class="form-control "  required="required" placeholder="Your Name" />
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control " required="required"  placeholder="Your Email" />
+=======
+                            <input type="text" class="form-control "  required="required" placeholder="votre nom" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control " required="required"  placeholder="voter email" />
+>>>>>>> updating
                         </div>
                         <div class="form-group">
                             <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <button type="submit" class="btn btn-info btn-block btn-lg">SUBMIT REQUEST</button>
+=======
+                            <button type="submit" class="btn btn-info btn-block btn-lg">envoyer</button>
+>>>>>>> updating
                         </div>
 
                     </form>
@@ -205,7 +248,11 @@ get_header();
              <div class="row set-row-pad"  >
     <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
 
+<<<<<<< HEAD
                     <h2 ><strong>Our Location </strong></h2>
+=======
+                    <h2 ><strong>Notre emplacement </strong></h2>
+>>>>>>> updating
         <hr />
                     <div ">
                         <h4><?php the_field('adresse');?></h4>
@@ -218,7 +265,11 @@ get_header();
                 </div>
                  <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
 
+<<<<<<< HEAD
                     <h2 ><strong>Social Conectivity </strong></h2>
+=======
+                    <h2 ><strong>Connectivité sociale </strong></h2>
+>>>>>>> updating
         <hr />
                     <div id="Social">
                       <?php
