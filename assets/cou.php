@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Free Education Template</title>
+    <title>EST'SB</title>
 <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
      <!-- FLEXSLIDER CSS -->
 <link href="<?php bloginfo('template_url');?>/ flexslider.css" rel="stylesheet" />
@@ -26,7 +26,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url');?>/assets/img/logo180-50.png" alt=""  /></a>
+
+                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url');?>/assets/img/ee.jpg" alt=""  /></a>
+
             </div>
             <div class="navbar-collapse collapse move-me">
                   <?php 
@@ -62,7 +64,7 @@
 
            <div class="row set-row-pad" >
            <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" >
-<<<<<<< HEAD
+
                 <?php if( get_field('image') ): ?>
     <img src="<?php the_field('image'); ?>" />
 <?php endif; ?>
@@ -83,7 +85,7 @@
                             <div class="panel-heading" >
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
-                                  <strong>   350+</strong> <?php echo $desc;?> 
+                                  <strong>   COURS</strong> <?php echo $desc;?> 
                                     </a>
                                 </h4>
                             </div>
@@ -107,88 +109,18 @@
 
 
 
-
-
-=======
-                 <?php if( get_field('image') ): ?>
-                 <img src="<?php the_field('image'); ?>" class="img-thumbnail" />
-                 <?php endif; ?>
-           </div>
-               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-                   <div class="panel-group" id="accordion">
                         
-
-                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.7s">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
-                                      <strong>   250+</strong> <?php get_sub_field('decription');?> 
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
-                                <div class="panel-body">
-                                    <p>
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                          <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.7s">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
-                                      <strong>   250+</strong> <?php get_sub_field('decription');?> 
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
-                                <div class="panel-body">
-                                    <p>
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                       
-
-                               
-                    </div>
                   
-           </div>
              
                  
                  
-               </div>
+             
              </div>
 
-
-
-
-
-
-
-
-
+    
                    
-                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
-                       <span style="font-size:40px;">
-                          <strong> 2500 + </strong> 
-                           <hr />
-                           Centers
-                       </span>
-                   </div>
-           </div>
-             
-                 
-                 
-               </div>
+          
              </div>
-=======
-                  
-
 
       <!-- COURSES SECTION END-->
 

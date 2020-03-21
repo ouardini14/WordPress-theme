@@ -27,7 +27,11 @@ get_header();?>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
                 <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url');?>/assets/img/logo180-50.png" alt=""  /></a>
+=======
+                <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url');?>/assets/img/ee.jpg" alt=""  /></a>
+>>>>>>> advenced update
             </div>
             <div class="navbar-collapse collapse move-me">
                   <?php 
@@ -46,6 +50,7 @@ get_header();?>
         </div>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div id="faculty-sec" >
     <div class="container set-pad">
              <div class="row text-center">
@@ -57,6 +62,9 @@ get_header();?>
                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo.
 =======
+=======
+
+>>>>>>> advenced update
   <div id="faculty-sec" >
     <div class="container set-pad">
              <div class="row text-center">
@@ -64,13 +72,18 @@ get_header();?>
                      <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"><?php the_field('titre');?> </h1>
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
                       <?php the_field('letexte');?>
+<<<<<<< HEAD
 >>>>>>> updating
+=======
+
+>>>>>>> advenced update
                          </p>
                  </div>
 
              </div>
              <!--/.HEADER LINE END-->
 
+<<<<<<< HEAD
 <<<<<<< HEAD
            <div class="row" >
            
@@ -118,6 +131,17 @@ get_header();?>
                </div>
              </div>
 =======
+=======
+
+           <div class="row" >
+           
+               
+                
+                   
+                 
+               
+
+>>>>>>> advenced update
            <?php
            if(have_rows('photo')) :?>
            <div class="d-flex" >
@@ -144,6 +168,10 @@ get_header();?>
             <?php endif;?> 
 
                
+<<<<<<< HEAD
 >>>>>>> updating
+=======
+
+>>>>>>> advenced update
         </div>
         <?php get_footer();?>
