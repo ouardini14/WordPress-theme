@@ -4,6 +4,9 @@ print_r(get_field('background'));
 echo'</pre> ';
 die();*/  
 get_header();
+
+ 
+
 ?> 
  <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
         <div class="container">
@@ -15,7 +18,6 @@ get_header();
                 </button>
 
               
-            
 
               <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/ee.jpg" alt=""  /></a>
 
@@ -38,8 +40,15 @@ get_header();
         </div>
     </div>
       <!--NAVBAR SECTION END-->
+     <?php $back = get_field('background');?>
+            <?php if($back['background']):?>
       
-       <div class="home-sec" id="home" style="background: no-repeat center center url('<?php echo the_field('background');?>'); ">
+       <div class="home-sec" id="home" style="background: no-repeat center center url(<?php echo $back;?>); ">
+        <?php else:?>
+          <div class="home-sec" id="home" style="background: no-repeat center center url(<?php echo bloginfo('template_url')?>/assets/img/presidence.jpg); ">
+   
+<?php endif;?>
+       
            <div class="overlay">
  <div class="container">
            <div class="row text-center " >
@@ -49,26 +58,59 @@ get_header();
                 <div class="flexslider set-flexi" id="main-section" >
                     <ul class="slides move-me">
                         <!-- Slider 01 -->
+                        <?php $me= get_field('menu');?>
                         <li>
-                              <h1><?php the_field('menu');?></h1>
-                           <h3><?php the_field('menu_copie');?></h3>
+                          <?php if($me):?>
+                              <h1><?php echo $me;?></h1>
+                              <?php else: ?>
+                                <h1>école superieur de technologie sidi bennour</h1>
+                           <?php endif;?>
+                           
+
+                            <?php $ta = get_field('menu_copie');?>
+                           <?php if($ta):?>
+                           <h3><?php  echo $ta;?></h3>
+                           <?php else:?>
+                           <h3> établissement public d’enseignement supérieur</h3>
+                            <?php endif;?>
+                          
+                           
                             
                         </li>
                         <!-- End Slider 01 -->
                         
                         <!-- Slider 02 -->
                         <li>
-                            <h1><?php the_field('menu');?></h1>
-                           <h3><?php the_field('menu_copie2');?></h3>
+                               <?php if($me):?>
+                              <h1><?php echo $me;?></h1>
+                              <?php else: ?>
+                                <h1>école superieur de technologie sidi bennour</h1>
+                          
+                           <?php endif;?>
+                           <?php $es = get_field('menu_copie2');?>
+                           <?php if($es):?>
+                           <h3><?php  echo $es;?></h3>
+                           <?php else:?>
+                           <h3>L’ESTSB est une composante de l’Université Chouaib Doukkali d’El Jadida.</h3>
+                            <?php endif;?>
+                          
                             
                         </li>
                         <!-- End Slider 02 -->
                         
                         <!-- Slider 03 -->
                         <li>
-                            <h1><?php the_field('menu');?></h1>
-                           <h3><?php the_field('menu_copie3');?></h3>
-                           
+                            <?php if($me):?>
+                              <h1><?php echo $me;?></h1>
+                              <?php else: ?>
+                                <h1>école superieur de technologie sidi bennour</h1>
+                           <?php endif;?>
+                           <?php $ti = get_field('menu_copie3');?>
+                           <?php if($ti):?>
+                           <h3><?php  echo $ti;?></h3>
+                           <?php else:?>
+                           <h3>La durée des études est de deux années universitaires </h3>
+                            <?php endif;?>
                         </li>
                         <!-- End Slider 03 -->
                     </ul>
@@ -101,9 +143,20 @@ get_header();
          <div id="features-sec" class="container set-pad" >
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line"><?php the_field('titrelist');?> </h1>
+                  <?php $ti= get_field('titrelist');?>
+                  <?php if($ti):?>
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line"><?php echo $ti;?> </h1>
+                     <?php else:?>
+                      <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line"> A propos de l’EST Sidi Bennour </h1>
+                   <?php endif;?>
                      <p data-scroll-reveal="enter from the bottom after 0.3s" >
-                     <?php the_field('textlist');?>
+                      <?php $t= get_field('textlist');?>
+                  <?php if($t):?>
+                     <?php echo $t?>
+                     <?php else:?>
+                   <p>   L’Ecole Supérieure de Technologie Sidi Bennour (ESTSB) est un établissement public d’enseignement supérieur à finalité de formation des Techniciens Supérieurs. Elle a été créée en Août 2016 par le Ministère de l’Enseignement Supérieur
+                      </p>
+                  <?php endif;?>
                          </p>
                  </div>
 
@@ -120,7 +173,13 @@ get_header();
                    <h3 >qualité de l'éducation</h3>
                        <hr />
                    <p >
-                       <?php the_field('first_champs');?>
+                    <?php $mo=get_field('first_champs');?>
+
+                       <?php if($mo):?>
+                        <?php echo $mo;?>
+                        <?php else:?>
+                        Sa vocation est de former des Techniciens Supérieurs polyvalents, hautement qualifiés et immédiatement opérationnels après leur sortie de l’Ecole en tant que collaborateurs d’ingénieurs et de managers
+                        <?php endif;?>  
                        
                    </p>
 
@@ -136,7 +195,14 @@ get_header();
 
                        <hr />
                    <p >
-                       <?php the_field('secend_champs');?>
+                    <?php $ma=get_field('secend_champs');?>
+
+                       <?php if($ma):?>
+                        <?php echo $ma;?>
+                        <?php else:?>
+                        programmes d’enseignement comportent des Cours magistraux, des Travaux Pratiques (TP), des Travaux Dirigés (TD) et des Dossiers et Travaux de Réalisation, des Projets de Fin d’Etude
+                        <?php endif;?>  
+                       
                        
                    </p>
 
@@ -149,7 +215,14 @@ get_header();
                 
                        <hr />
                    <p >
-                       <?php the_field('tred_champs');?>
+                    <?php $mi=get_field('tred_champs');?>
+
+                       <?php if($mi):?>
+                        <?php echo $mi;?>
+                        <?php else:?>
+                         La formation appliquée à l’ESTSB est largement tournée vers les Technologies d’Information et de Communication, les Techniques de Gestion
+                        <?php endif;?>  
+                       
                    </p>
 
                 </div>
@@ -168,8 +241,12 @@ get_header();
 
        
       <!-- COURSES SECTION END-->
-
-    <div id="contact-sec"  style="background: no-repeat center center url('<?php echo the_field('background2');?>'); ">
+        <?php $re=get_field('background2');?>
+        <?php if($re):?>
+    <div id="contact-sec"  style="background: no-repeat center center url('<?php echo $re;?>'); ">
+      <?php else:?>
+        <div id="contact-sec"  style="background: no-repeat center center url('<?php echo bloginfo('template_url')?>/assets/img/8.jpg); ">
+        <?php endif?>
            <div class="overlay">
  <div class="container set-pad">
       <div class="row text-center">
@@ -182,7 +259,13 @@ get_header();
 
             
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
-                       <?php the_field('contact');?>
+                      <?php $mm=get_field('contact');?>
+                      <?php if($mm):?>
+                        <?php echo $mm;?>
+                        <?php else:?>
+                        pour plus d'information a propos de notre école veuillez contactez notre support ou visiter notre réseaux sociaux
+                        <?php endif;?> 
+                       
                          </p>
                  </div>
 
@@ -234,14 +317,33 @@ get_header();
                 
         <hr />
                     <div ">
-                        <h4><?php the_field('adresse');?></h4>
+                      <?php $m=get_field('adresse');?>
+
+                       <?php if($m):?>
+                        <h4><?php echo get_field('adresse');?></h4>
+                        <?php else:?>
+                        <h4> Route Ben Maachou, 24.000 El Jadida, Maroc.</h4>
+                        <?php endif;?> 
+                        
                         
 
-                        
- 
-                        <h4><strong>Appel:</strong> <?php the_field('tele');?></h4>
+                        <?php $mp=get_field('tele');?>
 
-                        <h4><strong>Email: </strong><?php the_field('email');?></h4>
+                       <?php if($mp):?>
+                        <h4><strong>Appel:</strong> <?php echo $mp;?></h4>
+                        <?php else:?>
+                         <h4><strong>Appel:</strong> +212672435415</h4>
+                        <?php endif;?> 
+                          
+                        
+                        <?php $mmp=get_field('tele');?>
+
+                       <?php if($mmp):?>
+                        <h4><strong>Email: </strong><?php echo $mmp;?></h4>
+
+                        <?php else:?>
+                         <h4><strong>Email: </strong> baddi.youssef@ucd.ac.ma</h4>
+                        <?php endif;?> 
                     </div>
 
 
@@ -273,4 +375,5 @@ get_header();
 
                 </div>
                  </div>
+
 <?php get_footer();?>
