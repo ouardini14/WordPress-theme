@@ -52,10 +52,26 @@
       <div id="course-sec" class="container set-pad">
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"><?php the_field('titre');?></h1>
+                     <?php $ti= get_field('titre');?>
+                  <?php if($ti):?>
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"><?php echo $ti;?></h1>
+                     <?php else:?>
+                      <h1 data-scroll-reveal="enter from the bottom after 0.1s"  class="header-line"> nos cours </h1>
+                   <?php endif;?>
+                     <?php $tii= get_field('text');?>
+                  <?php if($tii):?>
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
-                     <?php the_field('text');?>
+                     
+                     <?php echo $tii;?>
                          </p>
+
+                         <?php else:?>
+                             <p data-scroll-reveal="enter from the bottom after 0.3s">
+                     
+                     voila les cours du notre professeurs en format pdf
+                         </p>   
+                      <?php endif;?>
+                         
                  </div>
 
              </div>
@@ -63,10 +79,12 @@
 
 
            <div class="row set-row-pad" >
-           <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" >
-
-                <?php if( get_field('image') ): ?>
-    <img src="<?php the_field('image'); ?>" />
+           <div class="col-lg-3 col-md-3 col-sm-3 " data-scroll-reveal="enter from the bottom after 0.4s" >
+<?php $im= get_field('image')?>
+                <?php if($im ): ?>
+    <img src="<?php echo $im; ?>" />
+    <?php else:?>
+        <img style="" src="<?php echo bloginfo('template_url')?>/assets/img/11.jpg ?>" />
 <?php endif; ?>
            </div>
                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
@@ -81,7 +99,10 @@
         $lien = get_sub_field('le_titre');
         $desc = get_sub_field('decription');
         
-        ?><div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.5s">
+        ?>
+        <?php $ui= get_field('repe')?>
+        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.5s">
+                           <?php if($desc):?>
                             <div class="panel-heading" >
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
@@ -89,11 +110,29 @@
                                     </a>
                                 </h4>
                             </div>
+                        
+                        <?php else:?>
+                            <div class="panel-heading" >
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                                  <strong>   COURS</strong> réseaux avencer 
+                                    </a>
+                                </h4>
+                            </div>
+                            <?php endif;?>
+                            <?php if($lien):?>
                             <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <p><a href="<?php echo $lien['url'];?>" target="_blank"><?php echo $desc;?></a></p>
                                 </div>
                             </div>
+                            <?php else:?>
+                                <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p><a href="https://drive.google.com/file/d/1qqhGqkquh1Zgm7I6yQYS-BH2aDttaxnx/view" target="_blank">réseaux avencer</a></p>
+                                </div>
+                            </div>
+                            <?php endif;?>
                         </div>
 
 
