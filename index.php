@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 /*echo'<pre>';
 print_r(get_field('background'));
 echo'</pre> ';
@@ -11,12 +11,7 @@ get_header();
  <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
+ 
               
 
               <a class="navbar-brand" href="#"><img class="logo-custom" src="<?php bloginfo('template_url')?>/assets/img/ee.jpg" alt=""  /></a>
@@ -24,7 +19,8 @@ get_header();
 
             </div>
             <div class="navbar-collapse collapse move-me">
-            	      <?php 
+            	     <?php ?>
+                    <?php 
                 wp_nav_menu(
                         array(
                         'theme_location' => 'top-menu',
@@ -35,6 +31,22 @@ get_header();
 
                 );
                 ?>
+                  <?php if(has_nav_menu('top-menu')): ?>
+                        <?php echo $var;?>
+                    <?php else: ?>
+                        <ul>
+                                
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#">acceuil</a></li>
+                                        <li><a href="#">Cours</a></li>
+                                        <li><a href="#">professeurs</a></li>
+                                        
+                                    </ul>
+                                
+                                
+                            
+
+                    <?php endif;?>
             </div>
            
         </div>
@@ -363,7 +375,7 @@ get_header();
                       $button1=get_field('button1');
                       ?>
                         <a href="<?php echo $button1['url'];?>">  
-                          <!--target="<?php echo $button1['target'];?>"-->
+                          
                           <?php echo $button1['title'];?>
 
 

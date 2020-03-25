@@ -54,11 +54,19 @@ get_header();?>
     <div class="container set-pad">
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"><?php the_field('titre');?> </h1>
+                  <?php $le=get_field('titre')?>
+                  <?php if($le):?>
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"><?php echo $le;?> </h1>
+                     <?php else:?>
+                      <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">nos professeurs </h1>
+                      <?php endif;?>
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
-                      <?php the_field('letexte');?>
-
-
+                      <?php $l=get_field('letexte')?>
+                  <?php if($l):?>
+                      <?php echo $l;?>
+                        <?php else:?>
+                          les meilleurs professeurs nationaux sont désireux de vous fournir une excellente qualité
+                            <?php endif;?>
                          </p>
                  </div>
 
@@ -77,13 +85,33 @@ get_header();?>
                
                     <div class="col-lg-3  col-md-3 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                      <div class="faculty-div">
-                     <img src="<?php echo get_sub_field('sub_photo');?>"  class="img-rounded" />
-                     <h3 ><?php the_sub_field('sub_texte');?></h3>
+                          <?php $a=get_sub_field('sub_photo'); ?>
+                          <?php if($a):?>
+                     <img src="<?php echo $a;?>"  class="img-rounded" />
+                     <?php else:?>
+                    <img src="<?php bloginfo('template_url');?>/assets/img/0.jpg"  class="img-rounded" />
+                  <?php endif;?>
+                  <?php $b=get_sub_field('sub_texte');?>
+                  <?php if($b):?>
+                     <h3 ><?php echo $b;?></h3>
+                     <?php else:?>
+                      <h3 >baddi youssef</h3>
+                    <?php endif;?>
                      <hr />
-                         <h4>département <br /> <?php the_sub_field('departement');?> </h4>
+                     <?php $bb=get_sub_field('departement');?>
+                  <?php if($bb):?>
+
+                         <h4>département <br /> <?php echo $bb ;?> </h4>
+                         <?php else:?>
+                           <h4>département <br /> informatique </h4>
+                         <?php endif;?>
                       <p >
-                       <?php the_sub_field('title'); ?>
-                       
+                         <?php $cc=get_sub_field('title');?>
+                  <?php if($cc):?>
+                       <?php echo $cc; ?>
+                       <?php else:?>
+                        PROFESSEUR ASSISTANT | CONSULTANT | FORMATEUR | KEYNOTE SPEAKER
+                       <?php endif;?>
                    </p>
                 </div>
                 
