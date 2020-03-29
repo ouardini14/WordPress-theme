@@ -33,6 +33,8 @@ ACF : advanced costum field pro
 | ------ | ------ |
 | ACF | https://we.tl/t-NvaPDedf2f |
 
+Then put the plugin in <b>wordpress\wp-content\plugins</b>
+
 *ACF : advanced costum field pro.
 
 # Pages
