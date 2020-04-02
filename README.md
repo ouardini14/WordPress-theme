@@ -1,6 +1,6 @@
 # :star:<strong style="color: blue; opacity: 0.80">**IHM PROJECT**</strong> :star: 
 # Introduction
-
+:star:
 We have created a wordpress theme based on three pages (Accueil,cours,professeur),we hope you like our work.
 # Tools
 
